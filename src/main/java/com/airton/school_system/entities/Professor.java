@@ -15,7 +15,6 @@ public class Professor implements Serializable {
     private String email;
     private String senha;
 
-
     private Curso curso;
 
     public Professor(){};
@@ -35,11 +34,11 @@ public class Professor implements Serializable {
         this.id = id;
     }
 
-    public String getName() {
+    public String getNome() {
         return nome;
     }
 
-    public void setName(String nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
@@ -57,6 +56,15 @@ public class Professor implements Serializable {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+
+    public Curso getCurso() {
+        return curso;
+    }
+
+    public void setCurso(Curso curso) {
+        this.curso = curso;
     }
 
     @Override

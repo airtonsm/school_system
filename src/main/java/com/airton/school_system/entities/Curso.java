@@ -11,14 +11,17 @@ public class Curso implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String nome;
 
+    @OneToOne
+    @JoinColumn(name = "professor_id")
     private Professor professor;
 
     private String aulas; //Será alterado após a criação da entidade aula;
-
     private String descricao;
+
+
+    //private Aula aula;
 
     public Curso(){}
 
