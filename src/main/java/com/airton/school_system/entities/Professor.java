@@ -15,6 +15,9 @@ public class Professor implements Serializable {
     private String email;
     private String senha;
 
+
+    private Curso curso;
+
     public Professor(){};
 
     public Professor(Long id, String nome, String email, String senha) {
